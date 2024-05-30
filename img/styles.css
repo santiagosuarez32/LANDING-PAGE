@@ -31,8 +31,13 @@ body {
 }
 
 .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
     height: 50px;
     padding: 10px 10px;
+    
 
 }
 
@@ -47,7 +52,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     font-size: 15px;
 }
 
@@ -60,3 +65,4 @@ body {
     font-size: 32px;
     color: blanchedalmond;
 }
+
