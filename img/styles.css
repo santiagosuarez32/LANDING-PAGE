@@ -8,25 +8,44 @@
 }
 
 header {
-    background-color: #126147c2;
+    /* background-color: #126147c2; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 20px 0px;
     height: 60px;
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke; */
+    background: #283048;
+    /* fallback for old browsers */
+
+
+
+
+
 
 
 }
 
 body {
-    background-color: rgb(38, 61, 61)
+    /* background: #0f0c29;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29); 
+     */
+    */
+    /*  */
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #233d4d, #131414);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .gustavo {
     height: 80px;
     padding: 10px 10px;
+
 
 }
 
@@ -37,7 +56,7 @@ body {
     /* gap: 20px; */
     height: 50px;
     padding: 10px 10px;
-    
+
 
 }
 
@@ -45,7 +64,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
+
+
 }
 
 .navbar-list {
@@ -58,20 +79,73 @@ body {
 
 .navbar a {
     color: palegoldenrod;
-    
+
 }
 
 
 
 .cerati-pixel-nav {
     font-size: 35px;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
     font-weight: 800;
+    color: palegoldenrod;
 }
 
-.lupa {
+.hero {
     display: flex;
     justify-content: center;
+    /* flex-direction: row; */
     align-items: center;
-    gap: 12350px;
+    /* border: 1px solid red; */
+    /* height: 80vh; */
+    border-radius: 20px;
+    padding: 100px 0px;
+}
+
+/* caja 1 */
+
+.caja1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 50px;
+    gap: 20px;
+
+
+}
+
+.caja1 h1 {
+    color: rgba(255, 255, 255, 0.973)
+}
+
+.caja1 p {
+   color: rgb(166, 166, 182);
+    text-align: left;
+}
+
+
+
+
+/* caja 2 */
+
+.caja2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+    padding: 50px;
+    text-align: center;
+    gap: 20px;
+
+
+}
+
+.caja2 h1 {
+    color: rgba(255, 255, 255, 0.973)
+}
+
+.caja2 img {
+    width: 250px;
 }
