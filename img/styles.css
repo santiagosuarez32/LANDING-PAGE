@@ -193,10 +193,10 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 50px 80px;
+    padding: 60px 400px;
     border-radius: 10px;
     color: rgb(166, 166, 182);
-    gap: 20px;
+    /* gap: 20px; */
 
 }
 
