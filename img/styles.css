@@ -53,7 +53,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
     height: 50px;
     padding: 10px 10px;
 
@@ -86,7 +85,6 @@ body {
 
 .cerati-pixel-nav {
     font-size: 35px;
-    /* color: blanchedalmond; */
     font-weight: 800;
     color: palegoldenrod;
 }
@@ -94,10 +92,8 @@ body {
 .hero {
     display: flex;
     justify-content: center;
-    /* flex-direction: row; */
     align-items: center;
     /* border: 1px solid red; */
-    /* height: 80vh; */
     border-radius: 20px;
     padding: 100px 0px;
 }
@@ -111,7 +107,6 @@ body {
     align-items: center;
     /* border: 1px solid red; */
     padding: 20px ;
-    /* gap: 20px; */
     max-width: 500px;
 
 
@@ -125,6 +120,42 @@ body {
    color: rgb(166, 166, 182);
     text-align: left;
 }
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    padding: 40px 20px;
+    gap: 70px;
+    align-content: flex-start;
+
+
+  
+    
+    
+    
+}
+
+.boton1, .boton2 {
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: #283048;
+    gap: 20px;
+    /* border: 1px solid red; */
+    
+   
+    
+}
+
+.botones a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 
 
@@ -152,3 +183,20 @@ body {
 .caja2 img {
     width: 250px;
 }
+
+/* caja texto */
+
+.caja-texto1 {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px 80px;
+    border-radius: 10px;
+    color: rgb(166, 166, 182);
+    gap: 20px;
+
+}
+
