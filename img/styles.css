@@ -72,6 +72,7 @@ body {
     align-items: center;
     gap: 30px;
     font-size: 15px;
+    padding: 10px 30px;
 }
 
 .navbar a {
@@ -93,7 +94,7 @@ body {
     align-items: center;
     /* border: 1px solid red; */
     border-radius: 20px;
-    padding: 100px 0px;
+    padding: 100px;
 }
 
 /* caja 1 */
@@ -139,7 +140,7 @@ body {
     display: flex;
     padding: 10px 10px;
     border-radius: 10px;
-    background: gray;
+    background: #283048;
     gap: 20px;
     border: none;
    
