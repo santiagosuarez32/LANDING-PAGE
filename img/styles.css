@@ -129,18 +129,12 @@ section {
 }
 
 .boton1, .boton2 {
-    
-    
     padding: 10px;
     border-radius: 10px;
     background: #283048;
     gap: 20px;
     border: none;
     transition: all 600ms ease;
-   
-    
-   
-    
 }
 
 .botones a {
@@ -239,6 +233,7 @@ propiedad:valor
     flex-direction: row;
     justify-content: center;
     /* border: 1px solid red; */
+    transition: all 600ms ease;
 }
 
 .primer-card {
@@ -294,8 +289,99 @@ propiedad:valor
     text-align: center;
 }
 
-.primer-card h2 {
+.primer-card h3 {
     background: #192b49;
     border-radius: 10px;
     padding: 5px;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-inline: auto;
+    max-width: 1000px;
+    /* height: 400px; */
+    
+}
+
+main {
+    padding: 150px;
+    /* border: 1px solid red; */
+}
+
+.contacto-caja1 {
+ /* border: 1px solid red; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: #233d4d;
+ padding: 198px;
+ width: 800px;
+  /* white-space: wrap; */
+}
+.contacto-caja2 {
+ /* border: 1px solid red; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: white;
+ padding: 22px 110px;
+ text-decoration: none;
+}
+
+.rellenar-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rellenar-info li, input {
+    /* border: 1px solid red; */
+    background: #192b49;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    /* overflow: auto;
+    max-width: 600px; */
+}
+
+.contacto-caja2 h2 {
+    padding: 0px 0px 30px;
+    
+}
+
+.rellenar-info button {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background: #141619;
+    max-width: 70px;
+    margin-inline: auto;
+    transition: all 600ms ease;
+    color: #657984;
+    font-weight: 700;
+}
+
+.boton-enviar:hover {
+    background: #141619;
+    transform: scale(1.2);  
+}
+
+.rellenar-info p {
+    /* border: 1px solid red; */
+    font-weight: 600;
+    background: #9da9b1;
+    border-radius: 10px;
+    
+}
+
+
+.primer-card:hover {
+    background: #33373e;
+    transform: scale(1.1);  
+    
 }
