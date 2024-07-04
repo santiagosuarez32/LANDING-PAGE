@@ -233,7 +233,6 @@ propiedad:valor
     flex-direction: row;
     justify-content: center;
     /* border: 1px solid red; */
-    transition: all 600ms ease;
 }
 
 .primer-card {
@@ -249,6 +248,7 @@ propiedad:valor
     /* border: 1px solid red; */
     gap: 15px;
     overflow: auto;
+    transition: all 1s ease;
 }
 
 .info-caja {
@@ -384,4 +384,25 @@ main {
     background: #33373e;
     transform: scale(1.1);  
     
+}
+
+/* footer */
+
+footer {
+    padding: 50px;
+}
+
+.footer-final {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #4d5671;
+    padding: 50px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.footer-final p {
+    font-weight: 500;
 }
