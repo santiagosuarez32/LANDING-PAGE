@@ -32,6 +32,14 @@ body {
 
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .gustavo {
     height: 80px;
     padding: 10px 10px;
@@ -79,9 +87,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     /* border: 1px solid red; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding: 100px;
+    
 }
 
 /* caja 1 */
@@ -105,7 +115,7 @@ body {
 }
 
 .caja1 p {
-   color: rgb(166, 166, 182);
+   color: #a6a6b6;
 }
 
  
@@ -126,6 +136,7 @@ body {
     background: #283048;
     gap: 20px;
     border: none;
+    transition: all 600ms ease;
    
     
    
@@ -166,7 +177,7 @@ body {
 
 .caja2 {
     /* border: 1px solid red; */
-    padding: 0px 0px 50px;
+    padding: 0px 0px 40px;
 
 }
 
@@ -209,16 +220,82 @@ propiedad:valor
 
 } */
 
-.boton1:hover {
+
+
+
+ .boton1:hover, .boton2:hover {
     background: #283048;
-    padding: 20px;
-    border-radius: 10px;
-    transition: all 500ms ease;
+    transform: scale(1.2); /* Aumentar ligeramente el tamaño con transform */
+    /* Eliminar el cambio de padding */
+} 
+
+/* card */
+
+.card {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px solid red; */
 }
 
-.boton2:hover {
-    background: #283048;
-    padding: 20px;
+.primer-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
-    transition: all 500ms ease;
+    padding: 20px 20px;
+    max-width: 400px;
+    background: #33373e;
+    color: #a6a6b6;
+    /* border: 1px solid red; */
+    gap: 15px;
+    overflow: auto;
+}
+
+.info-caja {
+    /* border: 1px solid red; */
+}
+
+.texto {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.card-info {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #141619;
+    max-width: 1000px;
+    margin-inline: auto;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.card-info h1 {
+    color: #657984;
+}
+
+
+
+.primer-card p {
+    font-weight: 600;
+    color: #e7e7ec;
+    text-align: center;
+}
+
+.primer-card h2 {
+    background: #192b49;
+    border-radius: 10px;
+    padding: 5px;
 }
