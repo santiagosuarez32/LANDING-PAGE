@@ -428,3 +428,50 @@ body, .contacto, .hero, section, .card-info, footer, main, header {
     animation-name: translateX, card-infoanimation;
     animation-duration: 2000ms;
 }
+
+
+
+@media (max-width:412px) {
+
+  /* body {
+    border: 1px solid red;
+  } */
+
+  .cerati-pixel-nav {
+    font-size: 16px;
+    max-width: 412px;
+  }
+
+  header {
+    max-width: 412px;
+  }
+
+  .navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    padding: 5px;
+    max-width: 412px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 412px;
+  }
+
+  .gustavo {
+    padding: 15px 5px;
+    max-width: 412px;
+  }
+
+  .icon {
+    padding: 15px 10px 15px 10px;
+    max-width: 412px;
+  }
+
+}
+  
