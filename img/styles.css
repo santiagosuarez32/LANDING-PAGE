@@ -247,6 +247,7 @@ section {
 
 
 
+
 /* CARDS */
 
 
@@ -313,6 +314,9 @@ main {
  text-decoration: none;
  /* border-radius: 10px; */ 
 }
+
+
+
 
 .rellenar-info {
     display: flex;
@@ -421,4 +425,3 @@ body, .contacto, .hero, section, .card-info, footer, main, header {
     animation-name: translateX, card-infoanimation;
     animation-duration: 2000ms;
 }
-
