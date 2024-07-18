@@ -192,6 +192,7 @@ section {
     background: #283048;
     transform: scale(1.2); /* Aumentar ligeramente el tamaño con transform */
     /* Eliminar el cambio de padding */
+    background-color: #222b46;
 } 
 
 /* card */
@@ -369,10 +370,12 @@ main {
 }
 
 .primer-card:hover {
-    background: #33373e;
+    /* background: #33373e; */
     transform: scale(1.1);  
-    
+    background-color: #1a2238; 
 }
+
+
 
 /* footer */
 
