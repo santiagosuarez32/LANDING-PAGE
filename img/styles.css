@@ -17,6 +17,7 @@ header {
     background: #283048;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 body {
@@ -392,3 +393,32 @@ footer {
 .footer-final p {
     font-weight: 500;
 }
+
+
+
+@keyframes card-infoanimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes translateX {
+    100% {
+        transform: translateX(100)
+    }
+
+    0% {
+        transform: translateX(0);
+
+    }
+}
+
+body, .contacto, .hero, section, .card-info, footer, main, header {
+    animation-name: translateX, card-infoanimation;
+    animation-duration: 2000ms;
+}
+
