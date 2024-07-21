@@ -10,14 +10,11 @@
 header {
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
-    height: 60px;
     background: #283048;
     position: sticky;
     top: 0;
     z-index: 1000;
+    /* justify-content: space-around; */
 }
 
 body {
@@ -30,6 +27,42 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #233d4d, #131414);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+    /* padding: 2rem 1rem; */
+    justify-content: center;
+    gap: 450px;
+    padding: 0.10rem 0.10rem;
+}
+
+/* .navbar-list a::after {
+
+} */
+
+.navbar-list {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    font-size: 15px;
+    /* padding: 10px 30px; */
+    /* justify-content: space-around; */
+    align-content: center;
+}
+
+.navbar a {
+    color: palegoldenrod;
+}
+
+.cerati-pixel-nav {
+    font-size: 35px;
+    font-weight: 800;
+    color: palegoldenrod;
 }
 
 section {
@@ -47,37 +80,20 @@ section {
 }
 
 .icon {
-    display: flex;
+    display: flex; 
     justify-content: center;
-    align-items: center;
-    height: 55px;
-    padding: 15px 20px 15px 15px;
+    align-items: center; 
+    width: 20px;
+    /* padding: 20px;  */
+  align-content: center;
+    align-self: center; 
+    padding-top: 14px;
+   
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.navbar-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    font-size: 15px;
-    padding: 10px 30px;
-}
 
-.navbar a {
-    color: palegoldenrod;
-}
 
-.cerati-pixel-nav {
-    font-size: 35px;
-    font-weight: 800;
-    color: palegoldenrod;
-}
 
 .hero {
     display: flex;
@@ -431,30 +447,27 @@ body, .contacto, .hero, section, .card-info, footer, main, header {
 
 
 
-@media (max-width:375px) {
-
-  /* body {
+@media (max-width:1080px) {
+  body {
     border: 1px solid red;
-  } */
+  } 
 
   .cerati-pixel-nav {
     font-size: 12px;
-    /* max-width: 412px; */
+    max-width: 412px; 
   }
 
-  header {
-    max-width: 375px;
-  }
+ 
 
-  .navbar-list {
+   .navbar-list {
     display: flex;
-    justify-content: center;
+     justify-content: center; 
     align-items: center;
     gap: 5px;
     font-size: 10px;
-    padding: 5px;
-    /* max-width: 412px; */
-  }
+    padding: 5px; 
+     max-width: 412px; 
+  } 
 
   .navbar {
     display: flex;
@@ -470,9 +483,33 @@ body, .contacto, .hero, section, .card-info, footer, main, header {
 
   .icon {
     padding: 15px 25px 15px 10px;
-    /* max-width: 412px; */
-    height: 50px;
+    max-width: 412px; 
+     height: 50px;
   }
+}
+
+
+
+
+.navbar-list a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.5s ease;
+}
+
+.navbar-list a {
+    position: relative;
+    padding-bottom: 0.75rem;
 
 }
-  
+
+.navbar-list a:hover::after {
+    width: 80%;
+}
+
+
