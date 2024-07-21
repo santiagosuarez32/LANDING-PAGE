@@ -7,51 +7,54 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header {
 
+/* *********************************HEADER, BODY, MAIN, FOOTER****************************** */
+footer {
+    padding: 270px 270px;
+}
+
+header {
     display: flex;
     background: #283048;
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* justify-content: space-around; */
 }
 
 body {
-  
-
- 
     background: #BBD2C5;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #536976, #BBD2C5);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #233d4d, #131414);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+main {
+    padding: 80px 110px 110px;
+}
+
+
+/* NAVBAR */
 .navbar {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin: auto;
-    /* padding: 2rem 1rem; */
     justify-content: center;
     gap: 450px;
     padding: 0.10rem 0.10rem;
 }
 
-/* .navbar-list a::after {
-
-} */
-
 .navbar-list {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 30px;
     font-size: 15px;
-    /* padding: 10px 30px; */
-    /* justify-content: space-around; */
     align-content: center;
 }
 
@@ -65,15 +68,6 @@ body {
     color: palegoldenrod;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-}
-
-
 .gustavo {
     height: 80px;
     padding: 10px 10px;
@@ -84,38 +78,32 @@ section {
     justify-content: center;
     align-items: center; 
     width: 20px;
-    /* padding: 20px;  */
-  align-content: center;
+    align-content: center;
     align-self: center; 
     padding-top: 14px;
-   
 }
 
 
-
+/* ***********************PRIMERA SECCION*********************** */
 
 
 .hero {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    /* border: 1px solid red; */
-    /* border-radius: 20px; */
-    padding: 40px;
+    gap: 200px;
+    padding: 40px 200px 40px 40px;
     background: #131f25;
     border-radius: 15px;
-
+    margin-inline: auto;
 }
 
-/* caja 1 */
+/* ***************PRIMERA CAJA**************************** */
 
 .caja1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     padding: 50px;
     max-width: 500px;
 }
@@ -129,7 +117,6 @@ section {
    color: #a6a6b6;
 }
 
- 
 .botones {
     display: flex; 
     padding: 40px 20px;
@@ -154,17 +141,13 @@ section {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* caja 2 */
+/* ******************SEGUNDA CAJA***************************** */
 
 .caja2 {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* border: 1px solid red; */
-    padding: 20px 0px;
+    justify-content: center;
+    align-content: center;
     text-align: center;
-    gap: 20px;
-    max-width: 500px;
 }
 
 .caja2 h1 {
@@ -175,19 +158,16 @@ section {
     width: 180px;
     background: rgba(128, 128, 128, 0.358);
     border-radius: 10px;
-
 }
 
 .caja2 {
-    /* border: 1px solid red; */
-    padding: 0px 0px 40px;
-
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-/* caja texto */
 
-.caja-texto1 {
-    /* border: 1px solid red; */
+/* .caja-texto1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,93 +176,81 @@ section {
     padding: 60px 400px;
     border-radius: 10px;
     color: rgb(166, 166, 182);
-    
-}
+} */
 
 
 
 
 
-
- .boton1:hover, .boton2:hover {
-    background: #283048;
-    transform: scale(1.2); /* Aumentar ligeramente el tamaño con transform */
-    /* Eliminar el cambio de padding */
-    background-color: #222b46;
-} 
-
-/* card */
+/* **************************SECCION CARDS******************************* */
 
 .card {
-    /* border: 1px solid red; */
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
     flex-direction: row;
     justify-content: center;
 }
 
 .primer-card {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
     padding: 20px 20px;
-    max-width: 400px;
+    max-width: 350px;
     background: #33373e;
     color: #a6a6b6;
     gap: 15px;
     overflow: auto;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
-
-
 .texto {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding-bottom: 40px;
 }
 
 .card-info {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #141619;
-    max-width: 1000px;
+    max-width: 1200px;
     margin-inline: auto;
     border-radius: 15px;
-    padding: 80px;
+    padding: 70px;
 }
-
-
-
-
-/* CARDS */
-
 
 .card-info h1 {
     color: #657984;
+    
 }
 
 .primer-card p {
     font-weight: 600;
     color: #e7e7ec;
     text-align: center;
-}
+     /* text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; */
+} 
 
 .primer-card h3 {
     background: #192b49;
     border-radius: 10px;
     padding: 5px;
 }
+
+
+/* ************************ SECCION CONTACTO ********************************* */
+
 
 .contacto {
     display: flex;
@@ -292,28 +260,15 @@ section {
     margin-inline: auto;
     max-width: 850px;
 }
-
-
-
-
-
-main {
-    padding: 80px 110px 110px;
-    /* border: 1px solid red; */
-  
     
-}
 
 .contacto-caja1 {
- /* border: 1px solid red; */
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
  background: #3b627c;
  color: #070606;
- 
-
 }
 
 .contacto-caja1 h3 {
@@ -321,7 +276,6 @@ main {
 }
 
 .contacto-caja2 { 
- /* border: 1px solid red; */
  display: flex;
  justify-content: center;
  flex-direction: column;
@@ -329,11 +283,7 @@ main {
  background: white;
  padding: 30px 110px; 
  text-decoration: none;
- /* border-radius: 10px; */ 
 }
-
-
-
 
 .rellenar-info {
     display: flex;
@@ -342,7 +292,6 @@ main {
 }
 
 .rellenar-info li, input {
-    /* border: 1px solid red; */
     background: #1a1c20;
     border: none;
     border-radius: 5px;
@@ -352,8 +301,7 @@ main {
 
 
 .contacto-caja2 h2 {
-    padding: 15px 0px 20px;
-   
+    padding: 15px 0px 20px; 
 }
 
 .rellenar-info button {
@@ -371,33 +319,27 @@ main {
 .boton-enviar:hover {
     background: #141619;
     transform: scale(1.2);  
+    cursor: pointer;
 }
 
 .rellenar-info p {
-    /* border: 1px solid red; */
     font-weight: 600;
-    /* background: #9da9b180; */
     border-radius: 5px;
     padding: 5px 5px;
     max-width: 250px;
     margin-inline: auto;
-    font-size: 15px;
-    
+    font-size: 15px; 
 }
 
 .primer-card:hover {
-    /* background: #33373e; */
     transform: scale(1.1);  
     background-color: #1a2238; 
 }
 
 
 
-/* footer */
+/* *********** FOOTER ******************* */
 
-footer {
-    padding: 390px 390px;
-}
 
 .footer-final {
     display: flex;
@@ -417,7 +359,7 @@ footer {
     font-weight: 500;
 }
 
-
+/* *************** ANIMACIONES/TRANSITIONS ******************************* */
 
 @keyframes card-infoanimation {
     from {
@@ -443,15 +385,48 @@ footer {
 body, .contacto, .hero, section, .card-info, footer, main, header {
     animation-name: translateX, card-infoanimation;
     animation-duration: 2000ms;
+
 }
+
+.navbar-list a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.5s ease;
+}
+
+.navbar-list a {
+    position: relative;
+    padding-bottom: 0.75rem;
+
+}
+
+.navbar-list a:hover::after {
+    width: 80%;
+}
+
+.boton1:hover, .boton2:hover {
+   background: #283048;
+   transform: scale(1.2); 
+   background-color: #222b46;
+   /* cursor: pointer; */
+} 
+
+
+
+/* ********************* MEDIAQUIERIES ***************************** */
 
 
 
 @media (max-width:1080px) {
-  body {
-    border: 1px solid red;
+    body {
+        border: 1px solid red;
   } 
-
+  
   .cerati-pixel-nav {
     font-size: 12px;
     max-width: 412px; 
@@ -487,29 +462,3 @@ body, .contacto, .hero, section, .card-info, footer, main, header {
      height: 50px;
   }
 }
-
-
-
-
-.navbar-list a::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #1d4ed8;
-    transition: all 0.5s ease;
-}
-
-.navbar-list a {
-    position: relative;
-    padding-bottom: 0.75rem;
-
-}
-
-.navbar-list a:hover::after {
-    width: 80%;
-}
-
-
