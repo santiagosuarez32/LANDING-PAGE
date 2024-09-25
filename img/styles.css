@@ -5,12 +5,15 @@
     list-style: none;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* height: 100vh; */
 }
 
 
 /* *********************************HEADER, BODY, MAIN, FOOTER****************************** */
 footer {
     padding: 270px 270px;
+    display: flex;
+    justify-content: center;
 }
 
 header {
@@ -19,12 +22,24 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    padding: 0;
 }
 
 body {
-    background: #BBD2C5;
-    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);
-    background: linear-gradient(to right, #233d4d, #131414);
+    /* background: #BBD2C5;
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5); */
+    background: linear-gradient( #233d4d, #131414);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
 }
 
 section {
@@ -32,11 +47,14 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 50px 250px;
 }
 
 main {
     padding: 80px 110px 110px;
+    display:flex;
+    justify-content: center;
+    
 }
 
 
@@ -44,11 +62,15 @@ main {
 .navbar {
     display: flex;
     align-items: center;
-    margin: auto;
-    justify-content: center;
-    gap: 450px;
+    margin-inline: auto;
+    gap: 45px;
     padding: 0.10rem 0.10rem;
+    width: 100%;
+    justify-content: center;
+    z-index: 1000;
 }
+
+
 
 .navbar-list {
     display: flex;
@@ -56,6 +78,7 @@ main {
     gap: 30px;
     font-size: 15px;
     align-content: center;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -74,13 +97,25 @@ main {
 }
 
 .icon {
-    display: flex; 
+    /* width: 45px; */
+    /* padding: 3px 3px; */
+
+    max-width: 20px;
+}
+
+.imagen-lupa {
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    width: 20px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     align-content: center;
-    align-self: center; 
-    padding-top: 14px;
+    padding: 10px;
+}
+
+
+.navbar-list li {
+    padding: 10px;
 }
 
 
@@ -90,11 +125,11 @@ main {
 .hero {
     display: flex;
     align-items: center;
-    gap: 200px;
+    gap: 100px;
     padding: 40px 200px 40px 40px;
     background: #131f25;
     border-radius: 15px;
-    margin-inline: auto;
+    /* margin-inline: auto; */
 }
 
 /* ***************PRIMERA CAJA**************************** */
@@ -148,6 +183,7 @@ main {
     justify-content: center;
     align-content: center;
     text-align: center;
+    padding: 0;
 }
 
 .caja2 h1 {
@@ -190,6 +226,7 @@ main {
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    padding: 0;
 }
 
 .primer-card {
@@ -198,8 +235,8 @@ main {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    padding: 20px 20px;
-    max-width: 350px;
+    padding: 30px 30px;
+    /* max-width: 350px; */
     background: #33373e;
     color: #a6a6b6;
     gap: 15px;
@@ -222,10 +259,10 @@ main {
     justify-content: center;
     align-items: center;
     background: #141619;
-    max-width: 1200px;
-    margin-inline: auto;
+    /* max-width: 1200px; */
+    /* margin-inline: auto; */
     border-radius: 15px;
-    padding: 70px;
+    padding: 50px;
 }
 
 .card-info h1 {
@@ -255,16 +292,13 @@ main {
 .contacto {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     text-align: center;
-    margin-inline: auto;
-    max-width: 850px;
+    max-width: 900px;
 }
     
 
 .contacto-caja1 {
  display: flex;
- flex-direction: column;
  justify-content: center;
  align-items: center;
  background: #3b627c;
@@ -272,23 +306,21 @@ main {
 }
 
 .contacto-caja1 h3 {
-    padding: 60px;
+    padding: 40px;
 }
 
 .contacto-caja2 { 
  display: flex;
- justify-content: center;
  flex-direction: column;
- align-items: center;
  background: white;
  padding: 30px 110px; 
- text-decoration: none;
 }
 
 .rellenar-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    padding: 25px;
 }
 
 .rellenar-info li, input {
@@ -347,11 +379,10 @@ main {
     flex-direction: column;
     align-items: center;
     background: #4d5671;
-    padding: 60px 60px;
+    padding: 60px;
     border-radius: 15px;
     gap: 10px;
-    max-width: 800px;
-    margin-inline: auto;
+    max-width: 900px;
 }
 
 
@@ -399,10 +430,15 @@ body, .contacto, .hero, section, .card-info, footer, main, header {
     transition: all 0.5s ease;
 }
 
+/* .navbar-list .links2 {
+    position: relative;
+    padding-bottom: 0.75rem;
+} */
+
 .navbar-list a {
     position: relative;
     padding-bottom: 0.75rem;
-
+    /* margin-top: 15px; */
 }
 
 .navbar-list a:hover::after {
@@ -421,44 +457,46 @@ body, .contacto, .hero, section, .card-info, footer, main, header {
 /* ********************* MEDIAQUIERIES ***************************** */
 
 
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+    body, header, main {
+        width: 576px;
+    }
 
-@media (max-width:1080px) {
-    body {
-        border: 1px solid red;
-  } 
-  
-  .cerati-pixel-nav {
-    font-size: 12px;
-    max-width: 412px; 
-  }
+    .navbar {
+        gap: 0%;
+    }
+
+    .hero {
+        gap: 0%;
+        padding: 10px;
+    }
+
+    .caja1 {
+        padding: 50px;
+    } */
+
+
+    
+
 
  
 
-   .navbar-list {
-    display: flex;
-     justify-content: center; 
-    align-items: center;
-    gap: 5px;
-    font-size: 10px;
-    padding: 5px; 
-     max-width: 412px; 
-  } 
 
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* max-width: 412px; */
-  }
 
-  .gustavo {
-    padding: 15px 5px;
-    /* max-width: 412px; */
-  }
 
-  .icon {
-    padding: 15px 25px 15px 10px;
-    max-width: 412px; 
-     height: 50px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
